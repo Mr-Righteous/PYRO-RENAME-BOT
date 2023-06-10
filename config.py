@@ -28,7 +28,7 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "29170430")
     API_HASH  = os.environ.get("API_HASH", "9fc333577002e5df00e88fd6da88f79b")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6239495835:AAFhCh09pXXEbwtHt-DRj-7inIBl0SSBRms") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Cluster0")     
@@ -36,7 +36,7 @@ class Config(object):
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
+    START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/2c8917e179de3e26c961e.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "-1001728803958") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
